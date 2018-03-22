@@ -2,15 +2,17 @@ var katzDeli = [];
 
 function takeANumber(line, name) {
   for (var i = 0; i < line.length; i++) {
-  
-    console.log(`Welcome ${name}. You are number ${i-1]}.`);
-  } 
+    if (name === line[i]) {
+      number = i + 1;
+    }
+  }
+ return `Welcome ${name}. You are number ${number}.`;
 }
 
 function nowServing( katzDeliLine) {
-return katzDeliLine.shift()
+return katzDeliLine.shift();
 }
 
 function currentLine() {
-  // returns the current line
+  return 'The line is currently: 1. Ada, 2. Grace"katzDeliLine;
 }
